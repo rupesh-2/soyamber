@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="flex bg-red-300 py-4 px-8 gap-x-8 justify-between">
+            <div class="flex gap-x-8">
+                <i class="fa fa-menorah"></i>
+                <li>Home</li>
+                <li>Messages</li>
+            </div>
+            <div>
+                <i class="fa fa-user"></i>
+            </div>
+        </ul>
+    </nav>
+    <div>
+        <div class="bg-white border rounded-lg px-8 py-6 mx-auto my-8 max-w-2xl">
+            <h2 class="text-2xl font-medium mb-4">Please Fill Out the form form to continue .....</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                    <input type="text" id="name" name="name"
+                           class="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
+                           required>
+                </div>
+                <div class="mb-4">
+                    <label for="age" class="block text-gray-700 font-medium mb-2">Age</label>
+                    <input type="number" id="age" name="age"
+                           class="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
+                           required>
+                </div>
+                <div class="mb-4">
+                    <label for="gender" class="block text-gray-700 font-medium mb-2">Gender</label>
+                    <select id="gender" name="gender"
+                            class="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
+                            required>
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="gender" class="block text-gray-700 font-medium mb-2">Province</label>
+                    <select id="province" name="province"
+                            class="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
+                            required>
+                        <option value="">Select Province</option>
+                        <option value="male">Koshi</option>
+                        <option value="female">Bagmati</option>
+                        <option value="other">Madesh</option>
+                        <option value="other">Karnali Pradesh</option>
+                        <option value="lumbini">Lumbini</option>
+                        <option value="Gandaki">Gandaki</option>
+                        <option value="Sudurpaschim">Sudurpaschim</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="income" class="block text-gray-700 font-medium mb-2">Income</label>
+                    <select id="income" name="income"
+                            class="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
+                            required>
+                        <option value="">Select Province</option>
+                        <option value="male"><10000</option>
+                        <option value="female">100000-100000</option>
+                        <option value="other">50000-1000000</option>
+                        <option value="other">1000000 amd more</option>
+                    </select>
+                </div>
+                <!--                <div class="mb-4">-->
+                <!--                    <label class="block text-gray-700 font-medium mb-2">What is your favorite color?</label>-->
+                <!--                    <div class="flex flex-wrap -mx-2">-->
+                <!--                        <div class="px-2 w-1/3">-->
+                <!--                            <label for="color-red" class="block text-gray-700 font-medium mb-2">-->
+                <!--                                <input type="radio" id="color-red" name="color" value="red" class="mr-2">Red-->
+                <!--                            </label>-->
+                <!--                        </div>-->
+                <!--                        <div class="px-2 w-1/3">-->
+                <!--                            <label for="color-blue" class="block text-gray-700 font-medium mb-2">-->
+                <!--                                <input type="radio" id="color-blue" name="color" value="blue" class="mr-2">Blue-->
+                <!--                            </label>-->
+                <!--                        </div>-->
+                <!--                        <div class="px-2 w-1/3">-->
+                <!--                            <label for="color-green" class="block text-gray-700 font-medium mb-2">-->
+                <!--                                <input type="radio" id="color-green" name="color" value="green" class="mr-2">Green-->
+                <!--                            </label>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                    <textarea id="message" name="message" placeholder="Something intresting about you......"
+                              class="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
+                              rows="5"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="bg-red-300 text-white px-4 py-2 rounded-lg hover:bg-red-600">Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+</body>
+</html>
